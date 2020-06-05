@@ -2,7 +2,7 @@ name: Release to Docker and git
 on:
   release:
     types: [published, created, edited]
-    tags: 
+    branch: 
       - v*
 #on: [push, pull_request]
 jobs:
