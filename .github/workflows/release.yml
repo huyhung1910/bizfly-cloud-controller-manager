@@ -1,8 +1,9 @@
 name: Release to Docker and git
 on:
-  push:
-    tags:
-       - v*
+  release:
+    types: [published, created, edited]
+    tags: 
+      - v*
 #on: [push, pull_request]
 jobs:
   test: 
